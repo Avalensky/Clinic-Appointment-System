@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+</head>
+<body>
+    <h2>Clinic Appointment Booking</h2>
+
+    <form action="AddAppointmentServlet" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="patientName" required><br><br>
+
+        <label>Surname:</label><br>
+        <input type="text" name="patientSurname" required><br><br>
+
+        <label>Contact Number:</label><br>
+        <input type="text" name="contactNumber" required><br><br>
+
+        <label>Doctor:</label><br>
+        <input type="text" name="doctorName" required><br><br>
+
+        <label>Date:</label><br>
+        <input type="date" name="appointmentDate" required><br><br>
+
+        <label>Time:</label><br>
+        <input type="time" name="appointmentTime" required><br><br>
+
+        <label>Reason for visit:</label><br>
+        <input type="text" name="reason"><br><br>
+
+        <input type="submit" value="Book Appointment">
+    </form>
+
+    <p><a href="viewAppointments.jsp">View all appointments</a></p>
+</body>
+</html>
